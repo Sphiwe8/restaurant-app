@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "ios",
+			"path": "FirebaseAuth",
+			"problemMatcher": [],
+			"label": "npm: ios - FirebaseAuth",
+			"detail": "expo start --ios"
+		}
+	]
+}
