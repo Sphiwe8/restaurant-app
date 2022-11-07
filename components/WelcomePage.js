@@ -1,17 +1,30 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/core';
 
-export default function AssetExample() {
+export default function WelcomePage() {
+
+  const navigation = useNavigation()
+
+  const signup = () => {
+    navigation.navigate('Sign up');
+  };
+
+  const login = () => {
+    navigation.replace('Home');
+   
+  }
+
   return (
     <View style={styles.container}>
 
  <Image style={styles.logo} source={require('../assets/icon.png')} />
 
       <Text style={styles.paragraph}>
-        Welcome to Resto Foods. Sign up for delicious mouth watering food or if you already have an account with us, than just Log in . Proudly designed by Sphiwe.
+        Welcome to Resto Foods. Sign up for delicious mouth watering food or if you already have an account with us, than just Log in . Proudly created by Sphiwe.
       </Text>
 
-      <TouchableOpacity style={styles.button1} >
+      <TouchableOpacity style={styles.button1} onPress={signup} >
       <Text style={styles.buttonText1}>
       SIGN UP
       </Text>
@@ -21,7 +34,7 @@ export default function AssetExample() {
       OR
       </Text>
 
-      <TouchableOpacity style={styles.button2} >
+      <TouchableOpacity style={styles.button2} onPress={login} >
       <Text style={styles.buttonText2}>
       LOG IN
       </Text>
@@ -37,6 +50,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 24,
     backgroundColor: '#3A4708',
+    height:'100%',
+   
   },
   paragraph: {
     margin: 15,

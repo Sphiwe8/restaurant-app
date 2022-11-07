@@ -17,13 +17,13 @@ export default function Signup() {
   const navigation = useNavigation()
 
   React.useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(user => {
+   auth.onAuthStateChanged(user => {
       if (user) {
-        navigation.replace("Home")
+        navigation.navigate("Home")
       }
     })
 
-    return unsubscribe
+    
   }, [])
 
   const handleSignUp = () => {
@@ -43,7 +43,7 @@ export default function Signup() {
   return (
     <View style={styles.container}>
 
- <Image style={styles.logo} source={require('../assets/login-icon.png')} />
+ <Image style={styles.logo} source={require('../assets/signup.png')} />
 
 <Text style={styles.header}>
  SIGN UP
@@ -95,14 +95,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     
-    backgroundColor:'#fff'
+    backgroundColor:'#fff',
+    height:'100%',
   },
 
 
     logo: {
     height: 158,
     width: 158,
-    left:50,
+    left:70,
     bottom:10,
 
   },

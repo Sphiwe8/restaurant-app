@@ -15,7 +15,7 @@ export default function Pizza4({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Pepperoni Pizza Xtra Pepperoni and cheese "});
   };
   
     const order = () => {
@@ -43,7 +43,7 @@ export default function Pizza4({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Pepperoni Pizza Xtra Pepperoni and cheese 
      </Text>
 
 

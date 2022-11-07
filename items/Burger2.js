@@ -15,7 +15,7 @@ export default function Burger2({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"The Gasby Delight with Double Cheese slices"});
   };
   
     const order = () => {
@@ -42,7 +42,7 @@ export default function Burger2({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     The Gasby Delight
      </Text>
 
 

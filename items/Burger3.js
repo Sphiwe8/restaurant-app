@@ -15,7 +15,7 @@ export default function Burger3({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:" Amazing Large Burger(with 2 Patties and Double Cheese)"});
   };
   
     const order = () => {
@@ -42,7 +42,7 @@ export default function Burger3({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Amazing Large Burger
      </Text>
 
 

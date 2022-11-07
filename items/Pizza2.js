@@ -15,7 +15,7 @@ export default function Pizza2({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Fresh Crusty Pizza"});
   };
   
     const order = () => {
@@ -43,7 +43,7 @@ export default function Pizza2({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Fresh Crusty Pizza With pineapple and mushroom
      </Text>
 
 

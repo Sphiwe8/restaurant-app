@@ -15,7 +15,7 @@ export default function Foods1({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Breakfast Delight"});
   };
   
     const order = () => {
@@ -42,7 +42,7 @@ export default function Foods1({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Breakfast Delight
      </Text>
 
 

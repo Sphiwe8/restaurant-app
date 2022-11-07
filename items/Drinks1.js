@@ -15,7 +15,7 @@ export default function Drinks1({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Chocolate & Vinila icecream with coco sauce"});
   };
   
     const order = () => {
@@ -43,7 +43,7 @@ export default function Drinks1({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Chocolate & Vinila icecream
      </Text>
 
 

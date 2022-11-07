@@ -15,7 +15,7 @@ export default function Burger({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"BBQ grilled patty Burger"});
   };
   
     const order = () => {
@@ -42,7 +42,7 @@ export default function Burger({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     BBQ grilled patty Burger
      </Text>
 
 

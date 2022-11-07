@@ -15,7 +15,7 @@ export default function Pizza3({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Hawiian Pizza With large Cold drink"});
   };
   
     const order = () => {
@@ -43,7 +43,7 @@ export default function Pizza3({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Hawiian Pizza With large Cold drink
      </Text>
 
 

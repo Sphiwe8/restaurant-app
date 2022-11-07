@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
+import { Card } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/core';
 
 // You can import from local files
@@ -124,137 +125,137 @@ const burgers = () => {
 
 
 <ScrollView style={styles.scrollView}>
-       <View style={styles.items}>
+       <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/pizza3.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Cheese Farm
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    with Saucage Topping
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 109.99
     </Text>
 
   <TouchableOpacity onPress={pizza1}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-           <View style={styles.items}>
+           <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/pizza2.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Fresh Crusty Pizza
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    With pineapple and mushroom
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 99.99
     </Text>
 
   <TouchableOpacity onPress={pizza2}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-           <View style={styles.items}>
+           <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/pizza3.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Hawiian Pizza
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    With large Cold drink
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 119.99
     </Text>
 
   <TouchableOpacity onPress={pizza3}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-           <View style={styles.items}>
+           <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/pizza.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Pepperoni Pizza
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    Xtra Pepperoni and cheese 
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 99.99
     </Text>
 
   <TouchableOpacity onPress={pizza4}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-        <View style={styles.items}>
+        <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/pizza.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Margherita Pizza
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    with chillies 
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 87.99
     </Text>
 
   <TouchableOpacity onPress={pizza1}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-        <View style={styles.items}>
+        <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/pizza.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Meat Pizza
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    Chicken or Beef 
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 218.99
     </Text>
 
   <TouchableOpacity onPress={pizza2}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
     
 
@@ -446,7 +447,7 @@ borderRadius:20,
 items:{
 width:'95%',
 height:70,
-backgroundColor:'#C1C1C1',
+backgroundColor:'#FFFF',
 margin:10,
 borderRadius:10,
 

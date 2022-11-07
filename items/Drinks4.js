@@ -15,7 +15,7 @@ export default function Drinks4({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Orange Juice"});
   };
   
     const order = () => {
@@ -43,7 +43,7 @@ export default function Drinks4({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Orange Juice
      </Text>
 
 

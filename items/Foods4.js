@@ -15,7 +15,7 @@ export default function Foods4({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:" Premium Rare Double"});
   };
   
     const order = () => {
@@ -42,7 +42,7 @@ export default function Foods4({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Premium Rare Double
      </Text>
 
 

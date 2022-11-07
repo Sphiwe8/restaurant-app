@@ -15,7 +15,7 @@ export default function Burger1({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location',  {menu:"Resto Burger"});
+    navigation.navigate('Location',  {menu:"Flappy Patty with Chicken"});
   };
   
     const order = () => {
@@ -42,7 +42,7 @@ export default function Burger1({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Flappy Patty
      </Text>
 
 

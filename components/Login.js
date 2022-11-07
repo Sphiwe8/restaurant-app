@@ -107,8 +107,9 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    
-    backgroundColor:'#fff'
+   
+    backgroundColor:'#fff',
+    height:'100%',
   },
 
 

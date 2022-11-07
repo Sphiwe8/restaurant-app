@@ -14,10 +14,9 @@ export default function Drinks2({navigation}) {
     navigation.navigate('Drinks');
   };
   
-    const location = () => {
-    navigation.navigate('Location');
+  const location = () => {
+    navigation.navigate('Location',  {menu:"Thai Ice tea with Berries"});
   };
-  
     const order = () => {
     navigation.navigate('Order');
   };
@@ -43,7 +42,7 @@ export default function Drinks2({navigation}) {
  <View style={styles.itemsContainer} >
 
      <Text style={styles.itemsName} >
-     The Resto Burger Large with Beef & Veggies
+     Thai Ice tea 
      </Text>
 
 

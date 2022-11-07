@@ -3,6 +3,7 @@ import { Text, View, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
 // You can import from local files
+import Welcome from './components/WelcomePage';
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -52,33 +53,34 @@ import { Card } from 'react-native-paper';
 
 export default function App() {
   return (
-   
 
- <NavigationContainer>
+
+    <NavigationContainer>
       <Stack.Navigator>
 
+       <Stack.Screen name="WelcomePage" options={{headerShown:false}} component={Welcome} />
 
-<Stack.Screen options={{headerShown: false}} name="Log in" component={Login} />
+        <Stack.Screen options={{ headerShown: false }} name="Log in" component={Login} />
 
 
-      <Stack.Screen name="Sign up" component={Signup} />
-      
-      
+        <Stack.Screen name="Sign up" options={{headerShown:false}} component={Signup} />
 
-        <Stack.Screen name="Home" component={Home} />
-     
-      <Stack.Screen name="Location" component={Location} />
 
-      <Stack.Screen name="OrderDetails" component={OrderDetails} />
-        
-<Stack.Screen name="Order" component={Order} />
+
+        <Stack.Screen name="Home"  options={{headerShown:false}} component={Home} />
+
+        <Stack.Screen name="Location" component={Location} />
+
+        <Stack.Screen name="OrderDetails" component={OrderDetails} />
+
+        <Stack.Screen name="Order" options={{headerShown:false}} component={Order} />
 
         <Stack.Screen name="Foods" component={Foods} />
         <Stack.Screen name="Foods1" component={Foods1} />
         <Stack.Screen name="Foods2" component={Foods} />
         <Stack.Screen name="Foods3" component={Foods} />
         <Stack.Screen name="Foods4" component={Foods} />
-        
+
 
 
         <Stack.Screen name="Pizza" component={Pizza} />
@@ -100,12 +102,12 @@ export default function App() {
         <Stack.Screen name="Drinks2" component={Drinks2} />
         <Stack.Screen name="Drinks3" component={Drinks3} />
         <Stack.Screen name="Drinks4" component={Drinks4} />
-        
+
       </Stack.Navigator>
 
     </NavigationContainer>
 
-    
+
   );
 }
 
@@ -116,5 +118,5 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     padding: 8,
   },
-  
+
 });

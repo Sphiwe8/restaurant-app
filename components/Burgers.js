@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
+import {Card} from 'react-native-paper';
 import { useNavigation } from '@react-navigation/core';
 
 // You can import from local files
@@ -69,7 +70,7 @@ const specials = () => {
 
        <View style={styles.itemsContainer} >
 
-       <View style={styles.details}>
+       <Card style={styles.details}>
        <Image style={styles.detailsImg} source={require('../assets/icon.png')} />
        <Text style={styles.detailsText}>
     Resto Foods
@@ -120,144 +121,144 @@ const specials = () => {
 </View>
 
 
-       </View>
+       </Card>
 
 
 <ScrollView style={styles.scrollView}>
-       <View style={styles.items}>
+       <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger3.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Flappy Patty
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    Chicken or Pork 
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 45.99
     </Text>
 
   <TouchableOpacity onPress={burger1}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-           <View style={styles.items}>
+           <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger3.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    The Gasby Delight
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    Double Cheese slices
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 47.99
     </Text>
 
   <TouchableOpacity onPress={burger2}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-           <View style={styles.items}>
+           <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger1.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Amazing Large Burger
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    2 Patties with Double Cheese
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 109.99
     </Text>
 
   <TouchableOpacity onPress={burger3}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-           <View style={styles.items}>
+           <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger2.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Flappy Medium Burger 
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    BBQ & Chicken sauce
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 87.99
     </Text>
 
   <TouchableOpacity onPress={burger4}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-        <View style={styles.items}>
+        <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger2.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Medium Chicken Burger
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    With Small Chips
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 99.99
     </Text>
 
   <TouchableOpacity onPress={burger1}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-        <View style={styles.items}>
+        <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger2.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    Small Gapsy burger
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    Side of Veggie Salad 
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 69.99
     </Text>
 
   <TouchableOpacity onPress={burger2}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
         
-        <View style={styles.items}>
+        <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger2.png')} />
 
     <Text style={styles.itemText}>
@@ -277,29 +278,29 @@ const specials = () => {
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
-        <View style={styles.items}>
+        <Card style={styles.items}>
     <Image style={styles.itemImg1} source={require('../assets/burger2.png')} />
 
     <Text style={styles.itemText}>
-    Resto Large Burger
+    BBQ grilled patty Burger
     </Text>
 
     <Text style={styles.itemTextsecond}>
-    Beef & Vegies 
+    with BBQ sauce
     </Text>
 
     
     <Text style={styles.itemTextPrice}>
-    R 89.99
+    R 79.99
     </Text>
 
   <TouchableOpacity onPress={burger4}  style={styles.orderbutton} >
     <Text style={styles.orderbuttonText}>ADD TO ORDER</Text>
     </TouchableOpacity>
 
-        </View>
+        </Card>
 
         
 
@@ -493,7 +494,7 @@ borderRadius:20,
 items:{
 width:'95%',
 height:70,
-backgroundColor:'#C1C1C1',
+backgroundColor:'#FFFF',
 margin:10,
 borderRadius:10,
 

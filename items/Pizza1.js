@@ -15,7 +15,7 @@ export default function Pizza1({navigation}) {
   };
   
     const location = () => {
-    navigation.navigate('Location');
+    navigation.navigate('Location',  {menu:"Cheese Farm"});
   };
   
     const order = () => {

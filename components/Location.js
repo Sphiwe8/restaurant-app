@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity, TextInput, ScrollView, } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity, TextInput, ScrollView, ActivityIndicator } from 'react-native';
 import { AwesomeTextInput } from 'react-native-awesome-text-input';
 import { useNavigation } from '@react-navigation/core';
 import { db } from '../firebase'
 
 export default function Location({route, navigation}) {
+
+  
 
     const [name, setName] = React.useState('');
     const [number, setNumber] = React.useState('');
@@ -13,22 +15,28 @@ export default function Location({route, navigation}) {
 
     const order = () => {
 
+     
+
         db.collection("orders").add({
             Name: name,
             PhoneNumber: number,
             StreetName: street,
             Suburd: suburd,
-            food:route.params.menu
+            food:route.params.menu,
             
 
         })
         .then((docRef) => {
             console.log("Document written with ID: ", docRef.id);
             navigation.navigate('Order');
+          
         })
         .catch((error) => {
             console.error("Error adding document: ", error);
+           
         });
+
+        
      
       };
 
@@ -93,8 +101,6 @@ export default function Location({route, navigation}) {
       SAVE
       </Text>
       </TouchableOpacity>
-
-     
      
     </View>
     </ScrollView>
